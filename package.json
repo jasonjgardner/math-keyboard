@@ -1,6 +1,6 @@
 {
-  "name": "arithmetic-table",
-  "version": "0.1.0",
+  "name": "math-keyboard",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -17,8 +17,11 @@
     "@vue/cli-plugin-eslint": "3.6.0",
     "@vue/cli-service": "3.6.0",
     "babel-eslint": "^10.0.1",
+    "cssnano": "^4.1.10",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -37,7 +40,10 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "cssnano": {
+        "preset": "default"
+      }
     }
   },
   "browserslist": [
@@ -45,6 +51,12 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "keywords": [],
-  "description": ""
+  "keywords": [
+    "vue",
+    "math",
+    "keyboard",
+    "educational",
+    "toy"
+  ],
+  "description": "Vue app for learning times tables, addition, subtraction, and division."
 }
